@@ -93,6 +93,7 @@ class LetterFrequency:
             log.info(
                 f'{i+1})'.rjust(6) + f"{c}".rjust(6) + f'{p:.2%}'.rjust(12)
             )
+            print(f"'{c}': '',")
 
         log.debug('-' * 32)
 
