@@ -89,11 +89,13 @@ class LetterFrequency:
         log.debug('-' * 32)
 
         for i, (c, n) in enumerate(list(self.c_to_n.items())):
-            p = n / n_total
-            log.info(
-                f'{i+1})'.rjust(6) + f"{c}".rjust(6) + f'{p:.2%}'.rjust(12)
-            )
-            print(f"'{c}': '',")
+            n / n_total
+            # log.info(
+            #     f'{i+1})'.rjust(6) + f"{c}".rjust(6) + f'{p:.2%}'.rjust(12)
+            # )
+            if i % 10 == 0:
+                print(f'# {i+1}-{i+10}')
+            print(f"('{c}', '?'),")
 
         log.debug('-' * 32)
 
